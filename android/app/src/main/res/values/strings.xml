@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Explore Florida</string>
+    <string name="facebook_app_id">1992594324131735</string>
+    <string name="fb_login_protocol_scheme">fb1992594324131735</string>
 </resources>

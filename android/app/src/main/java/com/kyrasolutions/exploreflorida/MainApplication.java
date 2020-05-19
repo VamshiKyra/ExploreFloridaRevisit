@@ -7,6 +7,11 @@ import com.facebook.react.PackageList;
 import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
 import com.facebook.react.bridge.JavaScriptExecutorFactory;
 import com.facebook.react.ReactApplication;
+import com.facebook.reactnative.androidsdk.FBSDKPackage;
+import org.reactnative.camera.RNCameraPackage;
+import com.transistorsoft.rnbackgroundgeolocation.RNBackgroundGeolocation;
+import com.reactnativecommunity.viewpager.RNCViewPagerPackage;
+import com.transistorsoft.rnbackgroundfetch.RNBackgroundFetchPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
@@ -25,8 +30,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       @SuppressWarnings("UnnecessaryLocalVariable")
       List<ReactPackage> packages = new PackageList(this).getPackages();
-      // Packages that cannot be autolinked yet can be added manually here, for example:
+      // Packages that cannot be autolinked yet can be added manually here, for
+      // example:
       // packages.add(new MyReactNativePackage());
+      packages.add(new FBSDKPackage());
       return packages;
     }
 
